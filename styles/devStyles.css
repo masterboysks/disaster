@@ -1,0 +1,24 @@
+.font {
+  font-family: "Poppins", sans-serif;
+}
+.gallery {
+  margin-top: 50px;
+}
+.theme {
+  background: #580d0d;
+}
+.devNavbar {
+  display: flex;
+}
+.devH2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.textH2 {
+  margin-top: auto;
+}
+.devSlider {
+  max-height: 100vh;
+  overflow: hidden;
+}

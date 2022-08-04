@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bet on better</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script src="./index.js" defer></script>
+</head>
+
+< class="font-sans">
+  <nav class="bg-primary fixed top-0 z-20 flex items-center justify-between w-full px-12 text-white">
+    <div class="logo p-4 text-xl font-bold">Bet on Better</div>
+    <div class="lg:hidden" id="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <ol class="lg:flex lg:static top-[60px] absolute right-0 hidden list-none bg-red-200 text-black lg:text-inherit lg:bg-inherit" id="nav-list">
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#prediction">Prediction</a>
+      </li>
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#donation">Support us</a>
+      </li>
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#about">About</a> us
+      </li>
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#services">Services</a>
+      </li>
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li class="hover:bg-white hover:text-black p-5" onclick="menuToggle()">
+        <a href="#contact">Contact</a>
+      </li>
+    </ol>
+  </nav>
+  <div class="h-[60vh]  flex items-center justify-center text-center bg-red-200 relative overflow-hidden">
+    <h2 class="z-10 w-7/12 text-3xl font-bold" id="change-text">
+      And help us make our Country a better place.
+    </h2>
+    <img src="./img/slide.jpg" alt="" class="md:w-full md:block mix-blend-multiply absolute top-0 hidden" />
+  </div>
+  <div class="h-[38vh] w-screen flex justify-center items-center">
+    <div class="flex items-center justify-center w-64 h-64 bg-red-100 rounded-full">
+      <div
+        class="h-52 w-52 hover:bg-red-400 hover:text-white flex items-center justify-center text-2xl font-bold text-center text-gray-700 bg-red-200 rounded-full cursor-pointer">
+        SoS
+      </div>
+    </div>
+  </div>
+  <div id="prediction" class="mb-9 scroll-mt-8 border-t-2 border-red-800"></div>
+  <div class="w-8/12 mx-auto">
+    <h2 class="my-9 text-2xl font-bold text-center">Predictions</h2>
+    <h3 class="my-9 text-2xl font-medium text-center">
+      List of Possible Upcomming Disasters
+    </h3>
+    <table class="ring-black ring-1 divide-slate-800 w-full my-6 text-center divide-y-2 rounded-md table-auto">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9/4/2022</td>
+          <td>Heavy Rainfall</td>
+          <td>Ktm</td>
+        </tr>
+        <tr>
+          <td>1/3/2023</td>
+          <td>Earthquake</td>
+          <td>Gorkha</td>
+        </tr>
+        <tr>
+          <td>12/8/2032</td>
+          <td>Drought</td>
+          <td>Lalitpur</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="donation" class="scroll-mt-8 flex flex-col items-center justify-center w-screen border-t-2 border-red-800">
+    <h2 class="my-9 text-2xl font-bold">Support us</h2>
+    <button class="hover:bg-red-400 w-fit my-9 px-10 py-4 bg-red-500 rounded">
+      Donation
+    </button>
+    <p class="w-8/12 text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum
+      cupiditate quisquam repellendus possimus! Reprehenderit quae, velit ad
+      nobis, animi doloremque provident tempore, accusamus aspernatur
+      laboriosam illo qui eveniet temporibus impedit eius!
+    </p>
+  </div>
+
+  <div id="about" class="my-9 scroll-mt-16 w-screen border-t-2 border-red-800"></div>
+  <div class="w-8/12 mx-auto text-center">
+    <h2 class="mb-12 text-2xl font-bold">About us</h2>
+    <p class="font-semibold">
+      An organization of volunteers dedicated to help other peoples in need
+      before and after any kind of natural disaster .
+    </p>
+    <div class="my-12">Started in 2019</div>
+    <div class="w-fit md:flex-row flex flex-col items-center mx-auto">
+      <button class="hover:bg-red-400 w-fit md:my-9 px-10 py-4 mx-5 my-2 bg-red-500 rounded">
+        Learn more
+      </button>
+      <button class="hover:bg-red-400 w-fit md:my-9 px-10 py-4 my-2 bg-red-500 rounded">
+        Download
+      </button>
+    </div>
+  </div>
+  <div class="my-9 scroll-mt-8 w-screen border-t-2 border-red-800" id="services"></div>
+  <div class="w-8/12 mx-auto mt-12 text-center">
+    <h2 class="text-2xl font-bold">Services</h2>
+    <div class="">
+      <div class="md:grid-cols-4 lg:grid-cols-4 my-9 grid w-full grid-cols-2 gap-4">
+        <div
+          class="card ring-2 ring-red-400 hover:bg-red-200 flex flex-col items-center justify-center p-5 text-center rounded-md cursor-pointer">
+          <div class="svg w-10/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M64 32h32v448H64c-35.35 0-64-28.66-64-64V96C0 60.66 28.65 32 64 32zM128 32h320v448H128V32zM176 282c0 8.835 7.164 16 16 16h53.1V352c0 8.836 7.165 16 16 16h52c8.836 0 16-7.164 16-16V298H384c8.836 0 16-7.165 16-16v-52c0-8.837-7.164-16-16-16h-54V160c0-8.836-7.164-16-16-16h-52c-8.835 0-16 7.164-16 16v54H192c-8.836 0-16 7.163-16 16V282zM512 32h-32v448h32c35.35 0 64-28.66 64-64V96C576 60.66 547.3 32 512 32z" />
+            </svg>
+          </div>
+          <h3>Rescue Operation</h3>
+        </div>
+        <div
+          class="card ring-2 ring-red-400 hover:bg-red-200 flex flex-col items-center justify-center p-5 text-center rounded-md cursor-pointer">
+          <div class="svg w-10/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M221.6 148.7C224.7 161.3 224.8 174.5 222.1 187.2C219.3 199.1 213.6 211.9 205.6 222.1C191.1 238.6 173 249.1 151.1 254.1V472C151.1 482.6 147.8 492.8 140.3 500.3C132.8 507.8 122.6 512 111.1 512C101.4 512 91.22 507.8 83.71 500.3C76.21 492.8 71.1 482.6 71.1 472V254.1C50.96 250.1 31.96 238.9 18.3 222.4C10.19 212.2 4.529 200.3 1.755 187.5C-1.019 174.7-.8315 161.5 2.303 148.8L32.51 12.45C33.36 8.598 35.61 5.197 38.82 2.9C42.02 .602 45.97-.4297 49.89 .0026C53.82 .4302 57.46 2.303 60.1 5.259C62.74 8.214 64.18 12.04 64.16 16V160H81.53L98.62 11.91C99.02 8.635 100.6 5.621 103.1 3.434C105.5 1.248 108.7 .0401 111.1 .0401C115.3 .0401 118.5 1.248 120.9 3.434C123.4 5.621 124.1 8.635 125.4 11.91L142.5 160H159.1V16C159.1 12.07 161.4 8.268 163.1 5.317C166.6 2.366 170.2 .474 174.1 .0026C178-.4262 181.1 .619 185.2 2.936C188.4 5.253 190.6 8.677 191.5 12.55L221.6 148.7zM448 472C448 482.6 443.8 492.8 436.3 500.3C428.8 507.8 418.6 512 408 512C397.4 512 387.2 507.8 379.7 500.3C372.2 492.8 368 482.6 368 472V352H351.2C342.8 352 334.4 350.3 326.6 347.1C318.9 343.8 311.8 339.1 305.8 333.1C299.9 327.1 295.2 320 291.1 312.2C288.8 304.4 287.2 296 287.2 287.6L287.1 173.8C288 136.9 299.1 100.8 319.8 70.28C340.5 39.71 369.8 16.05 404.1 2.339C408.1 .401 414.2-.3202 419.4 .2391C424.6 .7982 429.6 2.62 433.9 5.546C438.2 8.472 441.8 12.41 444.2 17.03C446.7 21.64 447.1 26.78 448 32V472z" />
+            </svg>
+          </div>
+          <h3>Food & shelter</h3>
+        </div>
+        <div
+          class="card ring-2 ring-red-400 hover:bg-red-200 flex flex-col items-center justify-center p-5 text-center rounded-md cursor-pointer">
+          <div class="svg w-10/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M512 80C512 98.01 497.7 114.6 473.6 128C444.5 144.1 401.2 155.5 351.3 158.9C347.7 157.2 343.9 155.5 340.1 153.9C300.6 137.4 248.2 128 192 128C183.7 128 175.6 128.2 167.5 128.6L166.4 128C142.3 114.6 128 98.01 128 80C128 35.82 213.1 0 320 0C426 0 512 35.82 512 80V80zM160.7 161.1C170.9 160.4 181.3 160 192 160C254.2 160 309.4 172.3 344.5 191.4C369.3 204.9 384 221.7 384 240C384 243.1 383.3 247.9 381.9 251.7C377.3 264.9 364.1 277 346.9 287.3C346.9 287.3 346.9 287.3 346.9 287.3C346.8 287.3 346.6 287.4 346.5 287.5L346.5 287.5C346.2 287.7 345.9 287.8 345.6 288C310.6 307.4 254.8 320 192 320C132.4 320 79.06 308.7 43.84 290.9C41.97 289.9 40.15 288.1 38.39 288C14.28 274.6 0 258 0 240C0 205.2 53.43 175.5 128 164.6C138.5 163 149.4 161.8 160.7 161.1L160.7 161.1zM391.9 186.6C420.2 182.2 446.1 175.2 468.1 166.1C484.4 159.3 499.5 150.9 512 140.6V176C512 195.3 495.5 213.1 468.2 226.9C453.5 234.3 435.8 240.5 415.8 245.3C415.9 243.6 416 241.8 416 240C416 218.1 405.4 200.1 391.9 186.6V186.6zM384 336C384 354 369.7 370.6 345.6 384C343.8 384.1 342 385.9 340.2 386.9C304.9 404.7 251.6 416 192 416C129.2 416 73.42 403.4 38.39 384C14.28 370.6 .0003 354 .0003 336V300.6C12.45 310.9 27.62 319.3 43.93 326.1C83.44 342.6 135.8 352 192 352C248.2 352 300.6 342.6 340.1 326.1C347.9 322.9 355.4 319.2 362.5 315.2C368.6 311.8 374.3 308 379.7 304C381.2 302.9 382.6 301.7 384 300.6L384 336zM416 278.1C434.1 273.1 452.5 268.6 468.1 262.1C484.4 255.3 499.5 246.9 512 236.6V272C512 282.5 507 293 497.1 302.9C480.8 319.2 452.1 332.6 415.8 341.3C415.9 339.6 416 337.8 416 336V278.1zM192 448C248.2 448 300.6 438.6 340.1 422.1C356.4 415.3 371.5 406.9 384 396.6V432C384 476.2 298 512 192 512C85.96 512 .0003 476.2 .0003 432V396.6C12.45 406.9 27.62 415.3 43.93 422.1C83.44 438.6 135.8 448 192 448z" />
+            </svg>
+          </div>
+          <h3>Financial Help</h3>
+        </div>
+        <div
+          class="card ring-2 ring-red-400 hover:bg-red-200 flex flex-col items-center justify-center p-5 text-center rounded-md cursor-pointer">
+          <div class="svg w-10/12">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M352.4 243.8l-49.83 99.5c-6.009 12-23.41 11.62-28.92-.625L216.7 216.3l-30.05 71.75L88.55 288l176.4 182.2c12.66 13.07 33.36 13.07 46.03 0l176.4-182.2l-112.1 .0052L352.4 243.8zM495.2 62.86c-54.36-46.98-137.5-38.5-187.5 13.06L288 96.25L268.3 75.92C218.3 24.36 135.2 15.88 80.81 62.86C23.37 112.5 16.84 197.6 60.18 256h105l35.93-86.25c5.508-12.88 23.66-13.12 29.54-.375l58.21 129.4l49.07-98c5.884-11.75 22.78-11.75 28.67 0l27.67 55.25h121.5C559.2 197.6 552.6 112.5 495.2 62.86z" />
+            </svg>
+          </div>
+          <h3>Healthcare</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="my-9 scroll-mt-8 w-screen border-t-2 border-red-800" id="gallery"></div>
+  <div class="w-8/12 mx-auto mt-12 text-center">
+    <h2 class="text-2xl font-bold">Gallery</h2>
+
+    <div class="md:grid-cols-2 lg:grid-cols-3 my-9 grid grid-cols-1 gap-5">
+      <!-- slows liveserver  -->
+      <img
+          class="h-full rounded shadow"
+          src="./img/galary1.jpg"
+          alt="disaster-1"
+        />
+        <img
+          class="h-full rounded shadow"
+          src="./img/galary2.jpg"
+          alt="disaster-2"
+        />
+        <img
+          class="h-full rounded shadow"
+          src="./img/galary3.jpg"
+          alt="disaster-3"
+        />
+        <img
+          class="h-full rounded shadow"
+          src="./img/galary4.jpg"
+          alt="disaster-4"
+        />
+        <img
+          class="h-full rounded shadow"
+          src="./img/galary5.jpg"
+          alt="disaster-5"
+        />
+        <img
+          class="h-full rounded shadow"
+          src="./img/galary6.jpg"
+          alt="disaster-6"
+        />
+    </div>
+  </div>
+  <div class="my-9 scroll-mt-8 w-screen" id="contact"></div>
+  <div class="mx-auto mt-12 text-center">
+    <div class="flex border-t-2 border-b-2 border-red-800">
+      <div class="md:w-1/3 w-1/2 py-4 border-r-2 border-red-800">
+        <h3 class="my-6 text-2xl font-medium">Contact Section:</h3>
+        <p>For any queries, Contact us.</p>
+        <p>
+        <div class="flex justify-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+          <div class="">
+
+            KICEM,Balkumari,Lalitpur
+          </div>
+        </div>
+        </p>
+        <p>
+        <div class="flex justify-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+          <div class="">
+
+            +977 9881354483,9812779618
+          </div>
+        </div>
+        </p>
+        <p>
+        <div class="flex justify-center space-x-2">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+          <span>
+
+            betonbetter@betonbtter.com
+          </span>
+        </div>
+        </p>
+      </div>
+      <div class="md:block hidden w-1/3 border-r-2 border-red-800"><div class="my-auto">
+        <img src="./img/location.jpg" alt="headquaters" class="w-full my-auto"> 
+      </div></div>
+      <div class="md:w-1/3 w-1/2 font-semibold">
+        Want to be an volunteer?
+        <form >
+          <label class="flex items-center justify-between m-0 mx-3" for="name">Name<input class="focus:ring-red-600 focus:border-red-500 w-8/12 p-2 m-2 rounded" type="text" name="name" placeholder="Enter your name"></label><br>
+          <label class="flex items-center justify-between mx-3" for="name">Age <input class="focus:ring-red-600 focus:border-red-500 w-8/12 p-2 m-2 rounded" type="number" name="age" placeholder="31"></label>
+          <br><label class="flex items-center justify-between mx-3" for="name">Mail<input class="focus:ring-red-600 focus:border-red-500 w-8/12 p-2 m-2 rounded" type="email" name="mail" placeholder="you@hotmail.com"></label><br>
+          <div id="btn" class="hover:bg-red-400 w-fit px-4 py-3 mx-auto mb-3 bg-red-500 rounded">Apply</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-primary flex items-center h-16">
+
+<div class="w-fit ml-auto mr-4 font-thin text-white">&copy;BetOnBetter.All rights reserved</div>
+  </footer>
+</body>
+
+</html>
